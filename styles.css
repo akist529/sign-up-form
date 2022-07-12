@@ -1,23 +1,70 @@
 /* CSS STYLESHEET for SIGN-UP FORM */
 
+/* HTML Elements */
+a {
+    text-decoration: none;
+}
+
+    a:active {
+        color: #446e1d;
+    }
+
+    a:visited {
+        color: #65b31d;
+    }
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: #446e1d;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 10px 40px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 60px;
+}
+
+    form div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
 h1 {
+    color: white;
     font-family: "Press Start 2P";
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h2 {
+    font-family: "Roboto";
 }
 
-.graphic {
-    background-image: url("./images/background.jpg");
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h3 {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+}
+
+input {
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+label {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+/* Custom CSS Classes */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .content {
@@ -26,15 +73,34 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 50px 0;
 }
 
-.form {
+.footer {
+    padding: 40px;
+}
+
+.graphic {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .graphic img {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 15rem;
+        margin: 0;
+    }
+
+.header {
+    padding: 0 50px;
+}
+
+.input {
     background-color: white;
     box-shadow: 0 2px 5px #888888;
-}
-
-#logo {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 20em;
-    margin: 0 0;
+    padding: 10px 40px;
 }
