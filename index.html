@@ -12,6 +12,11 @@
             <div class="graphic">
                 <img alt="Controller Logo" id="logo" src="./images/logo.png"/>
                 <h1>GameOn</h1>
+                <div class="credit">
+                    <small>Controller by Anonymous on <a href="https://www.pixilart.com/art/8-bit-controller-775083718a1a9bd">Pixilart</a></small>
+                    <small>Background by <a href="https://stock.adobe.com/contributor/209248708/rayhan?load_type=author&prev_url=detail">Rayhan</a> on <a href="https://as1.ftcdn.net/v2/jpg/04/73/09/04/1000_F_473090401_9oI4VQfbxgkb3mHdWr780xcJExctVKkG.jpg">Adobe Stock</a></small>
+                    <small>Title font by <a href="https://fonts.google.com/?query=CodeMan38">CodeMan38</a> on <a href="https://fonts.google.com/specimen/Press+Start+2P">Google Fonts</a></small>
+                </div>
             </div>
             <div class="content">
                 <div class="header">
@@ -22,7 +27,7 @@
                 </div>
                 <div class="input">
                     <h3>Let's do this!</h3>
-                    <form>
+                    <form action="">
                         <div>
                             <label for="firstName">First Name</label>
                             <input type="text" name="firstName" />
@@ -33,19 +38,19 @@
                         </div>
                         <div>
                             <label for="email">Email</label>
-                            <input type="text" name="email" />
+                            <input type="email" name="email" />
                         </div>
                         <div>
                             <label for="phoneNum">Phone Number</label>
-                            <input type="text" name="phoneNum" />
+                            <input type="tel" name="phoneNum" />
                         </div>
                         <div>
                             <label for="password">Password</label>
-                            <input type="text" name="password" />
+                            <input type="password" name="password" onChange="checkPass()" />
                         </div>
                         <div>
                             <label for="confirmPass">Confirm Password</label>
-                            <input type="text" name="confirmPass" />
+                            <input type="password" name="confirmPass" onChange="checkPass()" />
                         </div>
                     </form>
                 </div>
@@ -55,8 +60,7 @@
                 </div>
             </div>
         </div>
-        <!-- JAVASCRIPT & JQUERY FILE LINKS -->
+        <!-- JAVASCRIPT FILE LINKS -->
         <script type="text/javascript" src="./script.js"></script>
-        <script type="text/javascript" src="./query.js"></script>
     </body>
 </html>
